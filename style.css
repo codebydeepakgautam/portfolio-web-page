@@ -1,0 +1,322 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  #topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap other content */
+    font-size: 18px; /* Increase font size */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer/hand icon */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  #topBtn:hover {
+    background-color: #000; /* Darker background on hover */
+  }
+
+
+#text{
+    font-size: 60px;
+}
+#text-a{
+    font-size: 60px;
+}
+
+.icon{
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+    list-style: ;
+}
+.fa-instagram{
+    font-size: 30px;
+    
+}
+
+.btn-a{
+  margin-top: 5%;
+}
+
+#under{
+  display: inline-block;
+  position: relative;
+
+  text-decoration: none;
+  
+  padding-bottom: 5px; /* Space between text and underline */
+}
+
+/* The underline before hover */
+#under::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #007BFF; /* Underline color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Start with no visible underline */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* Hover state: expanding underline */
+#under:hover::after {
+  transform: scaleX(1); /* Fully expands underline */
+  transform-origin: bottom left;
+}
+
+.under{
+  
+  position: relative;
+
+  text-decoration: none;
+  
+  padding-bottom: 5px; /* Space between text and underline */
+}
+
+/* The underline before hover */
+.under::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #007BFF; /* Underline color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Start with no visible underline */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* Hover state: expanding underline */
+.under:hover::after {
+  transform: scaleX(1); /* Fully expands underline */
+  transform-origin: bottom left;
+}
+.under-a{
+  
+  position: relative;
+
+  text-decoration: none;
+  
+  padding-bottom: 5px; /* Space between text and underline */
+}
+
+/* The underline before hover */
+.under-a::after {
+  content: '';
+  position: absolute;
+  width: 45%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #007BFF; /* Underline color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Start with no visible underline */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* Hover state: expanding underline */
+.under-a:hover::after {
+  transform: scaleX(1); /* Fully expands underline */
+  transform-origin: bottom left;
+}
+.under-b{
+  
+  position: relative;
+
+  text-decoration: none;
+  
+  padding-bottom: 5px; /* Space between text and underline */
+}
+
+/* The underline before hover */
+.under-b::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #007BFF; /* Underline color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Start with no visible underline */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* Hover state: expanding underline */
+.under-b:hover::after {
+  transform: scaleX(1); /* Fully expands underline */
+  transform-origin: bottom left;
+}
+
+
+.btn{
+  background-color: red ; /* Button background color */
+  color: white; /* Button text color */
+ 
+
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer/hand icon */
+  transition: all 0.3s ease; /* Smooth transition for movement and shadow */
+  position: relative;
+}
+
+
+/* Hover effect: move slightly and add shadow */
+.btn:hover {
+  transform: translateY(-5px); /* Moves button up */
+  box-shadow: 0 8px 15px rgba(58, 6, 132, 0.2); /* Adds shadow */
+}
+
+/* Optional: Active state (when button is clicked) */
+.btn:active {
+  transform: translateY(2px); /* Slight downward movement on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+
+
+
+
+.link-opacity-10-hover{
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
+}
+
+.link-opacity-50-hover{
+  text-decoration: none;
+  color: black;
+}
+
+.content{
+  display: flex;
+}
+
+
+.text-container {
+ 
+  font-weight: bold;
+  color: #333;
+  overflow: hidden;
+}
+
+.text-container span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-100px); /* Start off-screen */
+  animation: flyIn 1s forwards;
+  animation-delay: calc(0.1s * var(--i)); /* Staggered animation */
+}
+
+@keyframes flyIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.feature-a{
+  margin-left: 60%;
+}
+
+
+/* Basic Reset */
+body, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* Footer container with columns */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows for wrapping on smaller screens */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px; /* Ensures columns have a minimum width */
+  margin: 10px;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #2ecc71;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #2ecc71;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stacks columns vertically */
+    text-align: center; /* Centers content */
+  }
+
+  .footer-column {
+    margin: 20px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
